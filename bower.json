@@ -1,0 +1,24 @@
+{
+  "name": "twr",
+  "description": "static design files for twr",
+  "main": "www/js/app.js",
+  "authors": [
+    "Michael Wanyoike <micwanyoike@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "http://www.twr.co.ke",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-validation": "^1.15.0",
+    "Materialize": "materialize#^0.97.6"
+  }
+}

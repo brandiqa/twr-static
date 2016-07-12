@@ -1,0 +1,93 @@
+/**
+**
+** Styles
+**
+**/
+
+// Materialize
+@import "variables"; //brand color scheme
+@import "www/lib/Materialize/sass/materialize.scss";
+
+//Custom Styling
+body {
+  color: #59626A;
+  background-color: #EFF3F6;
+  background-image: url("../img/bg.png");
+  background-repeat: repeat;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+}
+
+// Typography
+h1 {
+  font-size: 3rem;
+  color: #323B43;
+  text-align: center;
+  margin-top: 5px;
+}
+h2{
+  font-size: 2rem;
+  font-weight: 300;
+  color: #323B43;
+  text-align: center;
+}
+p {
+  text-align: justify;
+}
+
+// Nav
+.navbar-fixed {
+  height: 120px;
+}
+
+nav {
+  height: 100px;
+  line-height: 100px;
+  .brand-logo {
+    padding-top: 8px;
+  }
+}
+
+//Breadcrumb
+.breadcrumb {
+  color: #0073d1;
+  font-size: 1rem;
+  &:before {
+    color: #323B43;
+    font-size: 1rem;
+  }
+  &:last-child {
+    color: #323B43;
+  }
+  .material-icons {
+    padding-right: 5px;
+  }
+}
+
+#page-content {
+  margin-top: 20px;
+  //Side menu
+  .collection {
+    margin-top: 80px;
+    i {
+      vertical-align: middle !important;
+    }
+  }
+}
+
+//Footer
+.icons-social {
+  display:inline;
+  li {
+    float: left;
+    padding-right: 25px;
+    padding-bottom: 20px;
+  }
+  i {
+    color: #fff;
+  }
+}
+
+.footer-copyright {
+  background-color: darken($primary-color, 3%) !important;
+}
