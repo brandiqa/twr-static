@@ -44,6 +44,22 @@ p {
     .brand-logo {
       padding-top: 8px;
     }
+    i {
+      line-height: 100px;
+    }
+  }
+  i.right {
+    margin-left: 0;
+  }
+}
+
+// Mobile menu
+@media #{$medium-and-down} {
+  #nav-mobile {
+    background-color: $primary-color;
+    a {
+      color: #fff;
+    }
   }
 }
 
@@ -66,6 +82,14 @@ p {
     i {
       vertical-align: middle !important;
       padding-right: 8px;
+    }
+  }
+}
+
+@media #{$medium-and-down} {
+  #page-content {
+    .collection {
+      margin-top: 10px;
     }
   }
 }

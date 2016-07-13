@@ -1,4 +1,10 @@
 // Initialize Materialize components
 
-// Navbar
-$(".button-collapse").sideNav();
+$( document ).ready(function(){
+
+  //Drop Down
+  $(".dropdown-button").dropdown({hover:true, constrain_width:false, gutter:"10px"});
+
+  // Navbar
+  $(".button-collapse").sideNav();
+});
