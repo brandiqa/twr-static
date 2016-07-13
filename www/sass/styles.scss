@@ -35,42 +35,37 @@ p {
   text-align: justify;
 }
 
-// Nav
-.navbar-fixed {
-  height: 120px;
-}
-
-nav {
+// Primary Menu
+#primary-menu {
   height: 100px;
-  line-height: 100px;
-  .brand-logo {
-    padding-top: 8px;
+  nav {
+    height: 100px;
+    line-height: 100px;
+    .brand-logo {
+      padding-top: 8px;
+    }
   }
 }
 
-//Breadcrumb
+//Breadcrumbs
 .breadcrumb {
-  color: #0073d1;
   font-size: 1rem;
   &:before {
-    color: #323B43;
-    font-size: 1rem;
-  }
-  &:last-child {
-    color: #323B43;
+    font-size: 1.2rem;
   }
   .material-icons {
-    padding-right: 5px;
+    padding-right: 8px;
   }
 }
 
 #page-content {
-  margin-top: 20px;
+  margin-top: 10px;
   //Side menu
   .collection {
     margin-top: 80px;
     i {
       vertical-align: middle !important;
+      padding-right: 8px;
     }
   }
 }

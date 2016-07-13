@@ -13,12 +13,12 @@
 </head>
 <body>
   <!-- Navigation Links -->
-  <div class="navbar-fixed">
+  <div id="primary-menu" class="navbar-fixed">
     <nav class="white" role="navigation">
       <div id="navbar" class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="img/twr-logo.svg" alt="TWR Kenya" width="134" height="80"></a>
         <ul class="right hide-on-med-and-down">
           <li><a href="index.html">Home</a></li>
-          <li><a href="about-us.html">About Us</a></li>
+          <li class="active"><a href="about-us.html">About Us</a></li>
           <li><a href="radio.html">Radio</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Gallery</a></li>
@@ -35,13 +35,11 @@
     </nav>
   </div>
 
-  <!-- Page Content -->
-  <div id="page-content" class="container">
-
-    <!-- Breadcrumbs -->
-    <div class="row">
-      <div class="col s12">
-        <div class="breadcrumbs">
+  <!-- Breadcrumbs -->
+  <nav>
+    <div class="nav-wrapper">
+      <div class="container">
+        <div class="col s12">
           <a href="home.html" class="breadcrumb">
             <i class="small material-icons">home</i> Home
           </a>
@@ -49,12 +47,16 @@
         </div>
       </div>
     </div>
+  </nav>
 
+  <!-- Page Content -->
+  <div id="page-content" class="container">
     <div class="row">
+
       <!-- side menu -->
       <div class="col l3 s12">
         <div class="collection">
-          <a href="about-us.html" class="collection-item">
+          <a href="about-us.html" class="collection-item active">
             <i class="small material-icons">domain</i> About Us
           </a>
           <a href="team.html" class="collection-item">
