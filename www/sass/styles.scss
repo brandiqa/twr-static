@@ -8,7 +8,7 @@
 @import "variables"; //brand color scheme
 @import "www/lib/Materialize/sass/materialize.scss";
 
-//Custom Styling
+// Custom Styling
 body {
   color: #59626A;
   background-color: #EFF3F6;
@@ -35,7 +35,7 @@ p {
   text-align: justify;
 }
 
-// Primary Menu
+// desktop menu
 #primary-menu {
   height: 100px;
   nav {
@@ -51,19 +51,29 @@ p {
   i.right {
     margin-left: 0;
   }
-}
 
-// Mobile menu
-@media #{$medium-and-down} {
-  #nav-mobile {
+  // mobile menu
+  .side-nav {
     background-color: $primary-color;
-    a {
+    padding-top: 30px;
+    a, i{
       color: #fff;
+      height: 48px;
+      line-height: 48px;
+    }
+    li {
+      &:hover {
+        // display: none;
+        background-color: lighten($primary-color, 8%) !important;
+      }
+    }
+    .active {
+      background-color: darken($primary-color, 8%);
     }
   }
 }
 
-//Breadcrumbs
+// breadcrumbs
 .breadcrumb {
   font-size: 1rem;
   &:before {
@@ -87,6 +97,7 @@ p {
 }
 
 @media #{$medium-and-down} {
+  // side nav
   #page-content {
     .collection {
       margin-top: 10px;
@@ -94,12 +105,13 @@ p {
   }
 }
 
-//Footer
+// footer
 .icons-social {
   display:inline;
   li {
     float: left;
     padding-right: 25px;
+    padding-top: 15px;
     padding-bottom: 20px;
   }
   i {
