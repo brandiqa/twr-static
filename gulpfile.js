@@ -50,7 +50,7 @@ gulp.task('watch', function() {
   gulp.watch('www/sass/*.scss', ['sass']);
   gulp.watch('www/javascript/**', ['scripts']);
   gulp.watch('www/images/**', ['images']);
-  gulp.watch(['www/*.html']).on('change', livereload.changed);
+  gulp.watch(['www/*.html','www/layouts/*.html','www/*.php']).on('change', livereload.changed);
 });
 
 

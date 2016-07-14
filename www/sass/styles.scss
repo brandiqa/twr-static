@@ -29,7 +29,6 @@ h2{
   font-size: 2rem;
   font-weight: 300;
   color: #323B43;
-  text-align: center;
 }
 p {
   text-align: justify;
@@ -132,4 +131,50 @@ body {
 
 #page-content {
   flex: 1 0 auto;
+}
+
+//Team
+.manager {
+  .manager-name {
+    display: block;
+    font-size: 1.5rem;
+  }
+  .manager-position {
+    display: block;
+    font-style: italic;
+  }
+  hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.team {
+  .card-image {
+    padding: 5px;
+  }
+  .team-name {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $primary-color;
+    .material-icons {
+      margin-left: 0;
+      line-height: 48px;
+    }
+  }
+  .team-department {
+    display: block;
+    font-size: 1.2rem;
+    color: $secondary-color;
+  }
+  .team-position {
+    display: block;
+    font-size: 1.2rem;
+  }
+  .team-phrase {
+    display: block;
+    font-style: italic;
+    margin-top: 10px;
+  }
 }
