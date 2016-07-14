@@ -12,79 +12,8 @@
   <link href="css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/
 </head>
 <body>
-  <!-- Navigation Links -->
-  <div id="primary-menu" class="navbar-fixed">
-    <!-- About Dropdown Structure -->
-    <ul id="dropdown-about" class="dropdown-content">
-      <li><a href="about-us.html">About us</a></li>
-      <li class="divider"></li>
-      <li><a href="team.html">Team</a></li>
-      <li class="divider"></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li class="divider"></li>
-      <li><a href="services.html">Services</a></li>
-    </ul>
 
-    <!-- Radio Dropdown Structure -->
-    <ul id="dropdown-radio" class="dropdown-content">
-      <li><a href="radio.html">Sifa FM - Lamu</a></li>
-      <li class="divider"></li>
-      <li><a href="radio.html">Sifa FM - Voi</a></li>
-      <li class="divider"></li>
-      <li><a href="radio.html">Sifa FM - Garissa</a></li>
-      <li class="divider"></li>
-      <li><a href="radio.html">Maata Radio</a></li>
-    </ul>
-
-    <!-- Gallery Dropdown Structure -->
-    <ul id="dropdown-gallery" class="dropdown-content">
-      <li><a href="photo-gallery.html">Photo Gallery</a></li>
-      <li class="divider"></li>
-      <li><a href="video-gallery.html">Video Gallery</a></li>
-    </ul>
-
-    <!-- Desktop Menu -->
-    <nav class="white" role="navigation">
-      <div id="navbar" class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo">
-          <img src="img/twr-logo.svg" alt="TWR Kenya" width="134" height="80">
-        </a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="index.html">Home</a></li>
-          <li class="active">
-            <a class="dropdown-button" href="about-us.html" data-activates="dropdown-about">
-              About us<i class="material-icons right">arrow_drop_down</i>
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-button" href="radio.html" data-activates="dropdown-radio">
-              Radio<i class="material-icons right">arrow_drop_down</i>
-            </a>
-          </li>
-          <li><a href="#">Blog</a></li>
-          <li>
-            <a class="dropdown-button" href="photo-gallery.html" data-activates="dropdown-gallery">
-              Gallery<i class="material-icons right">arrow_drop_down</i>
-            </a>
-          </li>
-          <li><a href="contact-us">Contact Us</a></li>
-          <li><a class="waves-effect waves-light btn">Donate</a></li>
-        </ul>
-
-        <!-- Mobile & Tablet Menu -->
-        <ul id="nav-mobile" class="side-nav">
-          <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
-          <li class="active"><a href="about-us.html"><i class="material-icons left">people</i>About us</a></li>
-          <li><a href="radio.html"><i class="material-icons left">radio</i>Radio</a></li>
-          <li><a href="blog.html"><i class="material-icons left">book</i>Blog</a></li>
-          <li><a href="gallery.html.html"><i class="material-icons left">photo</i>Gallery</a></li>
-          <li><a href="contact-us.html"><i class="material-icons left">message</i>Contact Us</a></li>
-          <li><a class="waves-effect waves-light btn"><i class="material-icons left">favorite</i>Donate</a></li>
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-      </div>
-    </nav>
-  </div>
+  <?php require 'layouts/header.html'; ?>
 
   <!-- Breadcrumbs -->
   <nav>
@@ -128,7 +57,7 @@
 
         <img src="img/placeholder-1000.svg" alt="Put picture here" width="1000" height="400" class="responsive-img" />
 
-        <h2>Our Roots</h2>
+        <h2>Our History</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -147,48 +76,6 @@
 
   </div>
 
-  <footer class="page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Footer Content</h5>
-          <p class="grey-text text-lighten-4">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum accusamus at explicabo voluptas quaerat praesentium aliquam natus beatae odit illum nulla aperiam dolor, doloremque aliquid id tenetur, voluptatibus, qui. Quasi.
-          </p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Social Links</h5>
-          <ul class="icons-social">
-            <li><a href="https://www.facebook.com/twr.kenya" target="_blank">
-              <i class="fa fa-facebook fa-2x"></i>
-            </a></li>
-            <li><a href="https://twitter.com/twrkenya">
-              <i class="fa fa-twitter fa-2x"></i>
-            </a></li>
-            <li><a href="https://www.linkedin.com/in/twr-kenya-b3822565">
-              <i class="fa fa-linkedin fa-2x"></i>
-            </a></li>
-            <li><a href="https://www.instagram.com/twrkenya/">
-              <i class="fa fa-instagram fa-2x"></i>
-            </a></li>
-            <li><a href="https://plus.google.com/113760674190514308483/posts">
-              <i class="fa fa-google fa-2x"></i>
-            </a></li>
-            <li><a href="https://www.youtube.com/channel/UCKlivN4kx8rOoVQs9UfLyOQ">
-              <i class="fa fa-youtube fa-2x"></i>
-            </a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-        Trans World Radio Kenya © 2016
-        <a class="grey-text text-lighten-4 right" href="#!">Contact Us</a>
-      </div>
-    </div>
-  </footer>
-  <!-- scripts -->
-  <script type="text/javascript" src="js/app.js"></script>
+  <?php require 'layouts/footer.html';  ?>
 </body>
 </html>
