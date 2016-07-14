@@ -5,15 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>About Us | Trans World Radio Kenya</title>
 
-  <!-- CSS -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
-  <link href="css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/
+  <!-- stylesheets -->
+  <?php require 'layouts/stylesheets.html'; ?>
 </head>
 <body>
 
-  <?php require 'layouts/header.html'; ?>
+  <?php require 'layouts/navbar.html'; ?>
 
   <!-- Breadcrumbs -->
   <nav>
@@ -33,23 +30,7 @@
   <div id="page-content" class="container">
     <div class="row">
 
-      <!-- side menu -->
-      <div class="col m3 s12">
-        <div class="collection">
-          <a href="about-us.html" class="collection-item active">
-            <i class="small material-icons">domain</i> About Us
-          </a>
-          <a href="team.html" class="collection-item">
-            <i class="small material-icons">people</i> Team
-          </a>
-          <a href="projects.html" class="collection-item">
-            <i class="small material-icons">favorite</i> Projects
-          </a>
-          <a href="services.html" class="collection-item">
-            <i class="small material-icons">speaker_group</i> Services
-          </a>
-        </div>
-      </div>
+      <?php include 'layouts/about_sidenav.html'; ?>
 
       <!-- content -->
       <div class="col m9 s12">
